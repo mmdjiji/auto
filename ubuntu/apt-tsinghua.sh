@@ -6,7 +6,7 @@
 # GitHub: https://github.com/mmdjiji/auto
 
 if [ `id -u` -eq 0 ];then
-	system_version=$(cat /etc/os-release | grep VERSION_CODENAME |awk -F'=' '{print $2}')
+  system_version=$(cat /etc/os-release | grep VERSION_CODENAME |awk -F'=' '{print $2}')
   cp /etc/apt/sources.list /etc/apt/sources.list.bak
   echo "\
   # https://github.com/mmdjiji/auto
@@ -26,5 +26,5 @@ if [ `id -u` -eq 0 ];then
   apt-get update
   echo "Success!"
 else
-	echo "Error: Permission denied, you may use root to run this script."
+  echo "Error: Permission denied, you may use root to run this script."
 fi
