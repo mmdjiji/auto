@@ -17,12 +17,10 @@ if [ `id -u` -eq 0 ];then
   # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ $system_version-updates main contrib non-free
   deb https://mirrors.tuna.tsinghua.edu.cn/debian/ $system_version-backports main contrib non-free
   # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ $system_version-backports main contrib non-free
-  deb https://mirrors.tuna.tsinghua.edu.cn/$system_version-security buster/updates main contrib non-free
-  # deb-src https://mirrors.tuna.tsinghua.edu.cn/$system_version-security buster/updates main contrib non-free" > /etc/apt/sources.list
+  deb https://mirrors.tuna.tsinghua.edu.cn/debian-security $system_version/updates main contrib non-free
+  # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security $system_version/updates main contrib non-free" > /etc/apt/sources.list
   apt-get update
   echo "Success!"
 else
   echo "Error: Permission denied, you may use root to run this script."
 fi
-
-
