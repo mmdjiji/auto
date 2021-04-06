@@ -1,7 +1,6 @@
 # 一键脚本
  
 ## Ubuntu 更换清华APT源
-执行如下命令行即可:
 ```sh
 curl -O https://cdn.jsdelivr.net/gh/mmdjiji/auto@master/ubuntu/apt-tsinghua.sh && chmod +x apt-tsinghua.sh && sudo ./apt-tsinghua.sh && rm apt-tsinghua.sh
 ```
